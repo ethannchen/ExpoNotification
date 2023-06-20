@@ -1,0 +1,234 @@
+{
+  "project_info": {
+    "project_number": "303392108670",
+    "project_id": "notification-practice-2c939",
+    "storage_bucket": "notification-practice-2c939.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303392108670:android:86189b3f1cd5e7c1aea82f",
+        "android_client_info": {
+          "package_name": "com.fcmios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303392108670-22qudskla2bn0s6a7v0qttc69h4eh2q3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNIIlge7MFn-hhKNrZTNC4R4DNFp4Bgcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303392108670-22qudskla2bn0s6a7v0qttc69h4eh2q3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "303392108670-5i3iip8rabk87pqjv0a9c87n78j9aq08.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.NativeNotifee"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303392108670:android:5643ebd821145839aea82f",
+        "android_client_info": {
+          "package_name": "com.nativeblank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303392108670-22qudskla2bn0s6a7v0qttc69h4eh2q3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNIIlge7MFn-hhKNrZTNC4R4DNFp4Bgcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303392108670-22qudskla2bn0s6a7v0qttc69h4eh2q3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "303392108670-5i3iip8rabk87pqjv0a9c87n78j9aq08.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.NativeNotifee"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303392108670:android:3219177bd5ad0c09aea82f",
+        "android_client_info": {
+          "package_name": "com.nativenotifee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303392108670-22qudskla2bn0s6a7v0qttc69h4eh2q3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNIIlge7MFn-hhKNrZTNC4R4DNFp4Bgcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303392108670-22qudskla2bn0s6a7v0qttc69h4eh2q3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "303392108670-5i3iip8rabk87pqjv0a9c87n78j9aq08.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.NativeNotifee"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303392108670:android:4e2ead769af012bcaea82f",
+        "android_client_info": {
+          "package_name": "com.nativenotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303392108670-80kg8iqau3c2t63im44mkf15eup34bl7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nativenotification",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "303392108670-22qudskla2bn0s6a7v0qttc69h4eh2q3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNIIlge7MFn-hhKNrZTNC4R4DNFp4Bgcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303392108670-22qudskla2bn0s6a7v0qttc69h4eh2q3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "303392108670-5i3iip8rabk87pqjv0a9c87n78j9aq08.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.NativeNotifee"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303392108670:android:875e60abb8088756aea82f",
+        "android_client_info": {
+          "package_name": "com.rnfandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303392108670-22qudskla2bn0s6a7v0qttc69h4eh2q3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNIIlge7MFn-hhKNrZTNC4R4DNFp4Bgcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303392108670-22qudskla2bn0s6a7v0qttc69h4eh2q3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "303392108670-5i3iip8rabk87pqjv0a9c87n78j9aq08.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.NativeNotifee"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303392108670:android:a89ac26f394782faaea82f",
+        "android_client_info": {
+          "package_name": "com.yyexpo.ExpoNotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303392108670-22qudskla2bn0s6a7v0qttc69h4eh2q3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNIIlge7MFn-hhKNrZTNC4R4DNFp4Bgcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303392108670-22qudskla2bn0s6a7v0qttc69h4eh2q3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "303392108670-5i3iip8rabk87pqjv0a9c87n78j9aq08.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.NativeNotifee"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
