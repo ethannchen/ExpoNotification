@@ -17,88 +17,71 @@ async function saveTokenToDatabase(token) {
     console.log("New token added to the database: " + token);
   } catch (error) {
     console.log("Error adding token to the database:", error);
-
-    // try {
-    //   await firestore()
-    //     .collection("usersTokens")
-    //     .doc(userId)
-    //     .update({ token: token });
-
-    //   console.log("Token updated in the database: " + token);
-    // } catch (updateError) {
-    //   console.log("Error updating token in the database:", updateError);
-    // }
   }
 }
 
-// async function saveTokenToDatabase(token) {
-//   // Assume user is already signed in
-//   // const userId = auth().currentUser.uid;
-//   // const usersTokens = firestore().collection("usersTokens");
-//   const userId = "testUser";
-
-//   await firestore()
-//     .collection("usersTokens")
-//     .doc("testUser")
-//     .set({ token: token })
-//     .then(() => {
-//       console.log("new token added to database: " + token);
-//     })
-//     .catch(() => {
-//       console.log(e);
-//       firestore()
-//         .collection("usersTokens")
-//         .doc("testUser")
-//         .update({ token: token });
-//     });
-//   // if (!usersTokens.doc(userId).exists) {
-//   //   await usersTokens.doc(userId).set({ token: token });
-//   // }
-
-//   // // Add the token to the users datastore
-//   // await usersTokens.doc({ userId: userId }).update({
-//   //   token: firestore.FieldValue.arrayUnion(token),
-//   // });
-//   // console.log("new token added to database: " + token);
-// }
-
 async function onDisplayNotification(message) {
   const { title, body } = message;
-  // Request permissions (required for iOS)
-  await notifee.requestPermission();
+  try {
+    // Request permissions (required for iOS)
+    await notifee.requestPermission();
 
-  // Create a channel (required for Android)
-  const channelId = await notifee.createChannel({
-    id: "default",
-    name: "Default Channel",
-    badge: true,
-  });
+    // Create a channel (required for Android)
+    const channelId = await notifee.createChannel({
+      id: "default",
+      name: "Default Channel",
+      badge: true,
+    });
 
-  // Display a notification
-  await notifee.displayNotification({
-    title: title,
-    body: body,
-    android: {
-      channelId,
-      smallIcon: "ic_launcher", // optional, defaults to 'ic_launcher'.
-      // pressAction is needed if you want the notification to open the app when pressed
-      pressAction: {
-        id: "default",
+    // Display a notification
+    await notifee.displayNotification({
+      title: title,
+      body: body,
+      android: {
+        channelId,
+        smallIcon: "ic_launcher", // optional, defaults to 'ic_launcher'.
+        // pressAction is needed if you want the notification to open the app when pressed
+        pressAction: {
+          id: "default",
+        },
+        visibility: AndroidVisibility.PUBLIC,
       },
-      visibility: AndroidVisibility.PUBLIC,
-    },
-  });
+    });
+    console.log("(displayed notification) title: " + title + " body: " + body);
+  } catch (e) {
+    console.log(e);
+  }
 }
 
 // Note that an async function or a function that returns a Promise
 // is required for both subscribers.
 async function onMessageReceived(remoteMessage) {
-  onDisplayNotification({
-    title: remoteMessage.notification.title,
-    body: remoteMessage.notification.body,
-  });
-  // Do something
-  console.log(message);
+  const { title, body } = remoteMessage.data;
+  try {
+    await onDisplayNotification({
+      // title: remoteMessage.notification.title + " (foreground)",
+      // body: remoteMessage.notification.body,
+      title: title + " (foreground)",
+      body: body,
+    });
+    // Do something
+    console.log(remoteMessage);
+  } catch (e) {
+    console.log(e);
+  }
+}
+
+async function onMessageReceivedBack(remoteMessage) {
+  try {
+    await onDisplayNotification({
+      title: remoteMessage.notification.title + " (background)",
+      body: remoteMessage.notification.body,
+    });
+    // Do something
+    console.log(remoteMessage);
+  } catch (e) {
+    console.log(e);
+  }
 }
 
 export default function App() {
@@ -121,7 +104,7 @@ export default function App() {
   }, []);
 
   messaging().onMessage(onMessageReceived);
-  messaging().setBackgroundMessageHandler(onMessageReceived);
+  messaging().setBackgroundMessageHandler(onMessageReceivedBack);
 
   return (
     <View style={styles.container}>
